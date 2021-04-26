@@ -1,1 +1,1 @@
-export const endpoint = "http://covid-api.mmediagroup.fr/v1";
+export const endpoint = "https://covid-api.mmediagroup.fr/v1";

@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Form, Select } from "antd";
 import axios from "axios";
-import {endpoint} from "../common/contantes";
+import { endpoint } from "../common/contantes";
 
 const Home = () => {
     const [loading, setLoading] = useState(false);
@@ -12,7 +12,7 @@ const Home = () => {
         const res = await axios.get(`${endpoint}/cases`);
         if (res.status === 200) {
             console.log(res.data);
-            setPaises(Object.keys(res.data))
+            setPaises(Object.keys(res.data));
         }
         setLoading(false);
     }
@@ -22,7 +22,7 @@ const Home = () => {
     }, []);
 
     return (
-      <div>
+      <div> 
         <Form>
             <Form.Item name="pais" rules={[{ required: true, message: "Campo obrigatório!"}]}>
                 <Select loading={loading}>
