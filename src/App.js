@@ -13,7 +13,7 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/:pais/:tipo">
+            <Route exact path="/:pais">
               <Detalhe />
             </Route>
           </Layout.Content>
