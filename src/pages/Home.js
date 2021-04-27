@@ -38,7 +38,7 @@ const Home = () => {
 
     return (
       <div> 
-        <Form initialValues={{ pais: "Brasil" }} onFinish={onFinish} form = {form}>
+        <Form initialValues={{ pais: "Brazil" }} onFinish={onFinish} form = {form}>
             <Form.Item name="pais" rules={[{ required: true, message: "Campo obrigatório!"}]}>
                 <Select onChange={() => selecionarPais} placeholder="Selecione o País" loading={loading}>
                     <Select.Option>Selecione</Select.Option>
